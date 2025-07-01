@@ -1,0 +1,179 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.register-container {
+  background-image: url("https://blogassets.leverageedu.com/blog/wp-content/uploads/2020/05/23151218/BA-Courses.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+.register-form {
+  background-color: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.logo span:first-child {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.logo-text {
+  color: #1a202c;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: #4a5568;
+}
+.input-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e0;
+  font-size: 0.95rem;
+  color: #2d3748;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+  border-color: #3182ce;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.link {
+  color: #ec6f05;
+  cursor: pointer;
+}
+button {
+  width: 100%;
+  background-color: #ec6f05;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #cc5a00;
+}
+
+.login-link {
+  text-align: center;
+  font-size: 0.9rem;
+}
+.already-login {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.already-login .link {
+  color: #f97316; 
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin: 20px 0 15px;
+}
+
+.divider hr {
+  flex: 1;
+  height: 1px;
+  border: none;
+  background-color: #e0e0e0;
+}
+
+.divider span {
+  margin: 0 12px;
+  white-space: nowrap;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.social-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 0;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.google-btn img,
+.linkedin-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+
+

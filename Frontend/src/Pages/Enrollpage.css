@@ -1,0 +1,76 @@
+.enroll-page {
+  padding: 30px;
+  max-width: 700px;
+  margin: auto;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.course-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.payment-section {
+  background-color: #fdfdfd;
+  padding: 25px;
+  max-width: 500px;
+  margin: 40px auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pin-section {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pin-section label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.pin-input {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.pay-button {
+  margin-top: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pay-button:hover {
+  background-color: #218838;
+}

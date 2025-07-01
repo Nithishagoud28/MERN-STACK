@@ -1,0 +1,350 @@
+.contact-section {
+  background-color: #f56600;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  animation: fadeZoomIn 1s ease-in-out;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: slideInDown 1s ease-in-out;
+}
+
+.contact-subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  animation: slideInUp 1.2s ease-in-out;
+}
+
+/* Animation Definitions */
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.contact-page {
+  text-align: center;
+  background-color: #f56600;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.main-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-subtitle {
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f9fafb;
+  color: #1e293b;
+  border-radius: 16px;
+  padding: 30px;
+  width: 260px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.card .icon {
+  font-size: 32px;
+  color: #f56600;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-header p {
+    margin-left: 22%;
+}
+
+.contact-form, .location-map {
+  width: 45%;
+}
+
+.contact-form h2, .location-map h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-form p, .location-map p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #e65c00;
+}
+
+.location-map iframe {
+  width: 800px;
+  height: 600px;
+  border: none;
+}
+/* FAQ Section with Animation */
+.faq-section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.faq-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+  animation: slideUp 0.6s ease-in-out forwards;
+}
+
+.faq-subtitle {
+  font-size: 18px;
+  color: #475569;
+  margin-bottom: 40px;
+  animation: slideUp 0.8s ease-in-out forwards;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.faq-card {
+  background-color: #f9fafb;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideFadeUp 0.6s ease forwards;
+  animation-delay: calc(var(--i) * 0.2s);
+}
+
+/* Staggered animation delays (applied in React via inline style or class) */
+.faq-card:nth-child(1) { --i: 1; }
+.faq-card:nth-child(2) { --i: 2; }
+.faq-card:nth-child(3) { --i: 3; }
+.faq-card:nth-child(4) { --i: 4; }
+
+.faq-question {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.faq-answer {
+  font-size: 17px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.faq-contact {
+  margin-top: 50px;
+  font-size: 16px;
+  color: #475569;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.faq-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  gap: 8px;
+  font-weight: 600;
+  color: #f97316;
+  font-size: 18px;
+  animation: pulseFade 1.5s ease-in-out infinite;
+}
+
+.mail-icon {
+  font-size: 20px;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseFade {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+/* SocialMediaSection.css */
+.social-media-section {
+  background-color: orange;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-media-section h1 {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.social-media-section p {
+  color: white;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+}

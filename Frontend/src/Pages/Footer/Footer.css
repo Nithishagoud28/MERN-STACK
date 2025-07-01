@@ -1,0 +1,151 @@
+/* ---------- theme tokens ---------- */
+:root {
+  --footer-bg: #0f1b2b;
+  --footer-text: #cbd5e1;
+  --footer-heading: #ffffff;
+  --accent: #f97316; /* orange */
+  --card: #1c293b;
+}
+
+/* ---------- base ---------- */
+.footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 4rem 1rem 2rem;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+/* ---------- top grid ---------- */
+.footer__grid {
+  display: grid;
+  gap: 3rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* columns */
+.footer__col {
+  min-width: 0;
+}
+
+.footer__heading {
+  color: var(--footer-heading);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* brand block */
+.brand__name {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.brand__logo {
+  font-size: 1.75rem;
+  margin-right: 0.4rem;
+}
+
+.brand__tagline {
+  margin: 0 0 1.75rem;
+  max-width: 24ch;
+}
+
+.brand__socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.brand__socials a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--card);
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  color: #fff;
+  transition: background 0.25s;
+}
+
+.brand__socials a:hover {
+  background: var(--accent);
+}
+
+/* link/courses lists */
+.footer__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer__list li {
+  margin-bottom: 0.5rem;
+}
+
+.footer__list a {
+  color: var(--footer-text);
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.footer__list a:hover {
+  color: #fff;
+}
+
+/* newsletter */
+.newsletter__text {
+  margin: 0 0 1rem;
+  max-width: 28ch;
+}
+
+.newsletter__form {
+  position: relative;
+  display: flex; /* keeps input + button on same row for older browsers */
+}
+
+.newsletter__form input {
+  flex: 1 1 auto;
+  padding: 0.9rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.newsletter__form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 52px;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.25s;
+}
+
+.newsletter__form button:hover {
+  opacity: 0.85;
+}
+
+.newsletter__legal {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.newsletter__legal a {
+  color: inherit;
+  text-decoration: underline;
+}

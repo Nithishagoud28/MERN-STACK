@@ -1,0 +1,58 @@
+.consultation-page {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+}
+
+.consultation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.consultation-form input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.consultation-form button,
+.schedule-button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.schedule-button:hover,
+.consultation-form button:hover {
+  background-color: #0056b3;
+}
+.benefits-list {
+  list-style: none;      /* ❌ removes dots */
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.benefits-list li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.check {
+  color: green;
+  margin-right: 10px;
+  font-size: 20px;
+}

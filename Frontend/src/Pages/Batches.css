@@ -1,0 +1,224 @@
+.upcoming-batches {
+  background-color: #f36f00; /* Orange background */
+  padding: 10px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.upcoming-batches .heading {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.upcoming-batches .subheading {
+  font-size: 18px;
+  margin-top: 16px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  color: white;
+}
+/* Center the filter box in the page */
+.filter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* Border and spacing around the buttons */
+.batch-filter {
+  background-color: white;
+  padding: 20px;
+  /* border: 1px solid #e0e0e0; */
+  /* border-radius: 12px; */
+  display: flex;
+  gap: 16px;
+  
+}
+
+/* Buttons */
+.filter-btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  background-color: #f2f3f5;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-btn.active {
+  background-color: gray;
+  color: white;
+}
+.batch-table-container {
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+.batch-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.batch-table th,
+.batch-table td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.batch-table th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+  color: #666;
+}
+
+.mode {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.mode.online {
+  background-color: #d4f5dc;
+  color: #15803d;
+}
+
+.mode.hybrid {
+  background-color: #e0e8ff;
+  color: #4f46e5;
+}
+
+.seats-info {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.progress-bar {
+  margin-top: 6px;
+  height: 6px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.progress {
+  height: 6px;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.enroll-btn {
+  background-color: #f36f00;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background-color: #d65f00;
+}
+
+.faq-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.faq-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.faq-subtitle {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.faq-item {
+  background-color: #f9fafb;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: left;
+}
+
+.faq-question {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.faq-answer {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+.batch-help {
+  background-color: #f36f00;
+  padding: 10px 10px;
+  text-align: center;
+  color: white;
+}
+
+.batch-help-heading {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.batch-help-text {
+  font-size: 18px;
+  max-width: 720px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+.consult-btn {
+  background-color: white;
+  color: #f36f00;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 14px 26px;
+  border: none;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: 20%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.consult-btn:hover {
+  background-color: #f8f8f8;
+}
