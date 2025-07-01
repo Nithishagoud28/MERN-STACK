@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './Payment.css';
 
-const PaymentSuccess = () => {
+const Payment = () => {
   const location = useLocation();
   const { course, paymentMethod } = location.state || {};
 
@@ -16,4 +16,4 @@ const PaymentSuccess = () => {
   );
 };
 
-export default PaymentSuccess;
+export default Payment;

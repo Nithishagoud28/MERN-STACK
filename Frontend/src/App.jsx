@@ -10,7 +10,7 @@ import Batches from './Pages/Batches';
 import LoginForm from "./Credentials-Components/LoginForm"
 import RegisterForm from './Credentials-Components/RegisterForm';
 import Enrollpage from "./Pages/Enrollpage";
-import PaymentSuccess from './Pages/payment';
+import Payment from     "./Pages/Payment"
 import Consultation from './Pages/Consultation';
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
         {/* <Route path="/Loginform" element={<LoginForm />} /> */}
         {/* <Route path="/RegisterForm" element={<RegisterForm />} /> */}
          <Route path="/enroll/:id" element={<Enrollpage />} />
-         <Route path="/payment-success" element={<PaymentSuccess />} />
+         <Route path="/payment" element={<Payment />} />
          <Route path="/consultation" element={<Consultation />} />
         
       </Routes>
