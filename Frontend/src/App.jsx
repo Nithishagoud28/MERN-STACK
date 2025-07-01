@@ -20,11 +20,11 @@ function App() {
       <div>
       <Routes>
         <Route path="/" element={<LoginForm />} />
-        <Route path="/RegisterForm" element={<RegisterForm />} />
-        <Route path="/Herosection" element={<HeroSection />} />
-        <Route path= "/Courses" element= { <Courses/>} />
+        <Route path="/register" element={<RegisterForm />} />
+        <Route path="/herosection" element={<HeroSection />} />
+        <Route path= "/courses" element= { <Courses/>} />
         <Route path="/placements" element={<Placements />} />
-        < Route path='/Batches' element = {< Batches />} />
+        <Route path="/batches" element={<Batches />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/Loginform" element={<LoginForm />} /> */}
