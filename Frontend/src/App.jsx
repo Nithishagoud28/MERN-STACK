@@ -12,7 +12,7 @@ import RegisterForm from './Credentials-Components/RegisterForm';
 import Enrollpage from "./Pages/Enrollpage";
 import Payment from     "./Pages/Payment"
 import Consultation from './Pages/Consultation';
-import PopularCourses from './Components/Courses/PopularCourses';
+import PopularCourse from './Components/Courses/PopularCourse';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         <Route path="/herosection" element={<HeroSection />} />
         <Route path= "/courses" element= { <Courses/>} />
         <Route path="/placements" element={<Placements />} />
-        <Route path="/batches" element={<Batches />} />
+        < Route path="/batches" element ={< Batches />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/Loginform" element={<LoginForm />} /> */}
@@ -32,7 +32,7 @@ function App() {
          <Route path="/enroll/:id" element={<Enrollpage />} />
          <Route path="/payment" element={<Payment />} />
          <Route path="/consultation" element={<Consultation />} />
-         <Route path="/popularcourses" element={<PopularCourses />} />
+         <Route path="/popularcourse" element={<PopularCourse />} />
         
       </Routes>
        </div>

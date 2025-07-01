@@ -1,0 +1,225 @@
+.popular-courses {
+  padding: 60px 40px;
+  background-color: #ffffff; /* Pure white background */
+  font-family: "Segoe UI", sans-serif;
+  text-align: left;
+}
+
+.courses-header {
+  max-width: 1200px;
+  /* margin: auto; */
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.courses-header h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1f2d3d;
+  margin-bottom: 10px;
+}
+
+.courses-header p {
+  color: black;
+  font-size: 17px;
+  max-width: 700px;
+  margin-bottom: 10px;
+}
+
+.view-all-btn {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  top: 0;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-all-btn:hover {
+  background-color: #ff6b00;
+  color: white;
+}
+
+/* .course-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  width: 460px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  position: relative;
+  height: 220px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body .duration {
+  font-size: 14px;
+  color: #7a7a7a;
+  margin-bottom: 4px;
+}
+
+.card-body .rating {
+  font-size: 14px;
+  color: #f5a623;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.card-body h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1f2d3d;
+}
+
+.card-body p {
+  font-size: 15px;
+  color: #5e6c84;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6b00;
+}
+
+.enroll-btn {
+  background-color: #ff6b00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.enroll-btn:hover {
+  background-color: #e95f00;
+} */
+.course-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: #f9fafb;
+}
+
+.course-card {
+  width: 410px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff; /* make sure it's white */
+}
+
+.duration {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.rating {
+  color: #f59e0b;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-body h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #1e293b;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+  color: #475569;
+  flex-grow: 1;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  background: transparent; /* ✅ no dark bg */
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #f97316;
+}
+
+.enroll-btn {
+  background-color: #f97316;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background-color: #ea580c;
+}

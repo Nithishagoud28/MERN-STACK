@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import PopularCourses from "./Courses/PopularCourses";
+import PopularCourse from "./Courses/PopularCourse";
 import {
   FaFacebookF,
   FaTwitter,
@@ -57,7 +57,7 @@ const testimonials = [
   {
     name: "Leo Carter",
     title: "Software Engineer at Google",
-    image: "https://example.com/leo.jpg", // Replace with your actual image
+    image: "https://example.com/leo.jpg", 
     testimonial:
       "I had tried various online courses, but nothing compared to the structured learning and personal mentorship I received at EduMentor. The instructors were knowledgeable and supportive, and the career services team helped me prepare for interviews and negotiate my salary.",
     rating: 5,
@@ -112,7 +112,7 @@ const testimonials = [
           </nav>
 
           <div className={`auth-buttons ${isopen ? 'open' : ''}`}>
-            <Link to="/">
+            <Link to="/LoginForm">
               <button className="auth-btn">Logout</button>
             </Link>
             {/* <Link to="/RegisterForm">
@@ -180,7 +180,7 @@ const testimonials = [
           </div>
         </div>
       </section>
-      <PopularCourses />
+      <PopularCourse />
       <section className="hiring-partners">
       <h2>Our Hiring Partners</h2>
       <p>
