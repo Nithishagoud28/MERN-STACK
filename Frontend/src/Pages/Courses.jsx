@@ -9,7 +9,7 @@ const CoursesSection = () => {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/courses")
+    fetch("https://mern-stack-1-71po.onrender.com/courses")
       .then((res) => {
         if (!res.ok) throw new Error("❌ Network response was not ok");
         return res.json();

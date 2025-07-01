@@ -15,7 +15,7 @@ const EnrollPage = () => {
 
   useEffect(() => {
     if (!course && id) {
-      fetch(`http://localhost:5000/courses/${id}`)
+      fetch(`https://mern-stack-1-71po.onrender.com/courses/${id}`)
         .then((res) => {
           if (!res.ok) throw new Error("Failed to fetch course");
           return res.json();
