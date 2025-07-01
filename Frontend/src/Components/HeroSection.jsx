@@ -112,12 +112,12 @@ const testimonials = [
           </nav>
 
           <div className={`auth-buttons ${isopen ? 'open' : ''}`}>
-            <Link to="/LoginForm">
-              <button className="auth-btn">Login</button>
+            <Link to="/">
+              <button className="auth-btn">Logout</button>
             </Link>
-            <Link to="/RegisterForm">
+            {/* <Link to="/RegisterForm">
               <button className="auth-btn">Register</button>
-            </Link>
+            </Link> */}
           </div>
         </header>
         <section>

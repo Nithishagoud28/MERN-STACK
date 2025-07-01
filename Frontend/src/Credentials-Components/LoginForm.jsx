@@ -8,7 +8,7 @@ const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault(); // prevent actual form submission
     alert("Login successful!");
-       navigate("/");
+       navigate("/Herosection");
   };
   return (
     <div className="login-container">
