@@ -12,6 +12,7 @@ import RegisterForm from './Credentials-Components/RegisterForm';
 import Enrollpage from "./Pages/Enrollpage";
 import Payment from     "./Pages/Payment"
 import Consultation from './Pages/Consultation';
+import PopularCourses from './Components/Courses/PopularCourses';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
          <Route path="/enroll/:id" element={<Enrollpage />} />
          <Route path="/payment" element={<Payment />} />
          <Route path="/consultation" element={<Consultation />} />
+         <Route path="/popularcourses" element={<PopularCourses />} />
         
       </Routes>
        </div>
